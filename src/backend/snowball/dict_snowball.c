@@ -41,6 +41,7 @@
 #include "snowball/libstemmer/stem_ISO_8859_1_swedish.h"
 #include "snowball/libstemmer/stem_ISO_8859_2_romanian.h"
 #include "snowball/libstemmer/stem_KOI8_R_russian.h"
+#include "snowball/libstemmer/stem_UTF_8_czech.h"
 #include "snowball/libstemmer/stem_UTF_8_danish.h"
 #include "snowball/libstemmer/stem_UTF_8_dutch.h"
 #include "snowball/libstemmer/stem_UTF_8_english.h"
@@ -94,6 +95,7 @@ static const stemmer_module stemmer_modules[] =
 	{"swedish", PG_LATIN1, swedish_ISO_8859_1_create_env, swedish_ISO_8859_1_close_env, swedish_ISO_8859_1_stem},
 	{"romanian", PG_LATIN2, romanian_ISO_8859_2_create_env, romanian_ISO_8859_2_close_env, romanian_ISO_8859_2_stem},
 	{"russian", PG_KOI8R, russian_KOI8_R_create_env, russian_KOI8_R_close_env, russian_KOI8_R_stem},
+	{"czech", PG_UTF8, czech_UTF_8_create_env, czech_UTF_8_close_env, czech_UTF_8_stem},
 	{"danish", PG_UTF8, danish_UTF_8_create_env, danish_UTF_8_close_env, danish_UTF_8_stem},
 	{"dutch", PG_UTF8, dutch_UTF_8_create_env, dutch_UTF_8_close_env, dutch_UTF_8_stem},
 	{"english", PG_UTF8, english_UTF_8_create_env, english_UTF_8_close_env, english_UTF_8_stem},

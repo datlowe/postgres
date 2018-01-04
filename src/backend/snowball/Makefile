@@ -32,6 +32,7 @@ OBJS= $(WIN32RES) dict_snowball.o api.o utilities.o \
 	stem_ISO_8859_1_swedish.o \
 	stem_ISO_8859_2_romanian.o \
 	stem_KOI8_R_russian.o \
+	stem_UTF_8_czech.o \
 	stem_UTF_8_danish.o \
 	stem_UTF_8_dutch.o \
 	stem_UTF_8_english.o \
@@ -54,6 +55,7 @@ OBJS= $(WIN32RES) dict_snowball.o api.o utilities.o \
 # Note order dependency: use of some other language as ASCII dictionary
 # must come after creation of that language
 LANGUAGES=  \
+	czech		czech 		\
 	danish		danish 		\
 	dutch 		dutch 		\
 	english 	english		\
