@@ -46,6 +46,7 @@
 #include "snowball/libstemmer/stem_ISO_8859_2_romanian.h"
 #include "snowball/libstemmer/stem_KOI8_R_russian.h"
 #include "snowball/libstemmer/stem_UTF_8_arabic.h"
+#include "snowball/libstemmer/stem_UTF_8_czech.h"
 #include "snowball/libstemmer/stem_UTF_8_armenian.h"
 #include "snowball/libstemmer/stem_UTF_8_basque.h"
 #include "snowball/libstemmer/stem_UTF_8_catalan.h"
@@ -120,6 +121,7 @@ static const stemmer_module stemmer_modules[] =
 	STEMMER_MODULE(romanian, PG_LATIN2, ISO_8859_2),
 	STEMMER_MODULE(russian, PG_KOI8R, KOI8_R),
 	STEMMER_MODULE(arabic, PG_UTF8, UTF_8),
+	STEMMER_MODULE(czech, PG_UTF8, UTF_8),
 	STEMMER_MODULE(armenian, PG_UTF8, UTF_8),
 	STEMMER_MODULE(basque, PG_UTF8, UTF_8),
 	STEMMER_MODULE(catalan, PG_UTF8, UTF_8),

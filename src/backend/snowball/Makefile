@@ -43,6 +43,7 @@ OBJS += \
 	stem_ISO_8859_2_romanian.o \
 	stem_KOI8_R_russian.o \
 	stem_UTF_8_arabic.o \
+	stem_UTF_8_czech.o \
 	stem_UTF_8_armenian.o \
 	stem_UTF_8_basque.o \
 	stem_UTF_8_catalan.o \
@@ -78,6 +79,7 @@ OBJS += \
 # must come after creation of that language
 LANGUAGES=  \
 	arabic		arabic		\
+	czech		czech 		\
 	armenian	armenian	\
 	basque		basque		\
 	catalan		catalan		\
